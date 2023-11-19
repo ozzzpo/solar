@@ -40,7 +40,7 @@ export default function App() {
         <PlanetCanvas
           canvasWidth={"300px"}
           canvasHeight={"230px"}
-          name={"mercury"}
+          name={"Меркурий"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -50,7 +50,7 @@ export default function App() {
         <PlanetCanvas
           canvasWidth={"500px"}
           canvasHeight={"300px"}
-          name={"venus"}
+          name={"Венера"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -61,7 +61,7 @@ export default function App() {
           canvasWidth={"500px"}
           canvasHeight={"300px"}
           intensity={1}
-          name={"earth"}
+          name={"Земля"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -71,7 +71,7 @@ export default function App() {
         <PlanetCanvas
           canvasWidth={"500px"}
           canvasHeight={"300px"}
-          name={"mars"}
+          name={"Марс"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -81,7 +81,7 @@ export default function App() {
         <PlanetCanvas
           canvasWidth={"720px"}
           canvasHeight={"820px"}
-          name={"jupiter"}
+          name={"Юпитер"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -91,7 +91,7 @@ export default function App() {
         <PlanetCanvas
           canvasWidth={"759px"}
           canvasHeight={"700px"}
-          name={"saturn"}
+          name={"Сатурн"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -101,7 +101,7 @@ export default function App() {
         <PlanetCanvas
           canvasWidth={"600px"}
           canvasHeight={"600px"}
-          name={"uranus"}
+          name={"Уран"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -111,7 +111,7 @@ export default function App() {
         <PlanetCanvas
           canvasWidth={"500px"}
           canvasHeight={"500px"}
-          name={"neptune"}
+          name={"Нептун"}
           onClick={handleClick}
           choosed={choosedPlanet}
         >
@@ -120,8 +120,8 @@ export default function App() {
       </div>
       <div className="scroll-zone">
         <h3>
-          Scroll here <br />
-          <span>Double click on planet to see more...</span>
+          Листать тут <br />
+          <span>Двойной клик по планете...</span>
         </h3>
       </div>
     </div>

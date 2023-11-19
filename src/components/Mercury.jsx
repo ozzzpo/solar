@@ -26,7 +26,7 @@ export function Mercury({ onClick, name, isChoosed }) {
       dispose={null}
       onClick={(event) => onClick(event, name, camera, cameraControlsRef)}
     >
-      <CameraControls ref={cameraControlsRef} dollySpeed={0} />
+      <CameraControls ref={cameraControlsRef} dollySpeed={0} maxZoom={1} />
       <mesh
         geometry={nodes.Object_4.geometry}
         material={materials["Default_OBJ.005"]}

@@ -27,23 +27,23 @@ export function Venus({ isChoosed, name, onClick }) {
       dispose={null}
       onClick={(event) => onClick(event, name, camera, cameraControlsRef)}
     >
-      <CameraControls ref={cameraControlsRef} dollySpeed={0} />
-      <group name="Sketchfab_Scene">
+      <CameraControls ref={cameraControlsRef} dollySpeed={0} maxZoom={1} />
+      <group name='Sketchfab_Scene'>
         <group
-          name="Sketchfab_model"
+          name='Sketchfab_model'
           rotation={[-Math.PI / 2, 0, 0]}
           scale={111.518}
         >
-          <group name="Root">
+          <group name='Root'>
             <group
-              name="Camera"
+              name='Camera'
               position={[48.908, -38.435, -0.002]}
               rotation={[1.572, 0.888, -0.154]}
               scale={4.287}
             />
-            <group name="Ceres" scale={9.385}>
+            <group name='Ceres' scale={9.385}>
               <mesh
-                name="Ceres_0"
+                name='Ceres_0'
                 geometry={nodes.Ceres_0.geometry}
                 material={materials.Material}
                 scale={0.002}

@@ -24,36 +24,36 @@ export function Neptune({ isChoosed, name, onClick }) {
   });
   return (
     <group ref={group} dispose={null}>
-      <CameraControls ref={cameraControlsRef} dollySpeed={0} />
-      <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
+      <CameraControls ref={cameraControlsRef} dollySpeed={0} maxZoom={1} />
+      <group name='Sketchfab_Scene'>
+        <group name='Sketchfab_model' rotation={[-Math.PI / 2, 0, 0]}>
           <group
-            name="943e82ae1e91464bb6057ce325b1063bfbx"
+            name='943e82ae1e91464bb6057ce325b1063bfbx'
             rotation={[Math.PI / 2, 0, 0]}
           >
-            <group name="Object_2">
-              <group name="RootNode">
+            <group name='Object_2'>
+              <group name='RootNode'>
                 <group
-                  name="Planeta"
+                  name='Planeta'
                   rotation={[-Math.PI / 2, 0, 0]}
                   onClick={(event) =>
                     onClick(event, name, camera, cameraControlsRef)
                   }
                 >
                   <mesh
-                    name="Planeta_Planeta_0"
+                    name='Planeta_Planeta_0'
                     geometry={nodes.Planeta_Planeta_0.geometry}
                     material={materials.Planeta}
                     scale={0.21}
                   />
                 </group>
                 <group
-                  name="Atmosfera"
+                  name='Atmosfera'
                   rotation={[-Math.PI / 2, 0, 0]}
                   scale={0.212}
                 >
                   <mesh
-                    name="Atmosfera_Atmosfera_0"
+                    name='Atmosfera_Atmosfera_0'
                     geometry={nodes.Atmosfera_Atmosfera_0.geometry}
                     material={materials.Atmosfera}
                   />

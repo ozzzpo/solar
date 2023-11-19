@@ -28,7 +28,7 @@ export function Mars({ isChoosed, name, onClick }) {
       dispose={null}
       onClick={(event) => onClick(event, name, camera, cameraControlsRef)}
     >
-      <CameraControls ref={cameraControlsRef} dollySpeed={0} />
+      <CameraControls ref={cameraControlsRef} dollySpeed={0} maxZoom={1} />
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.0029}>
         <mesh
           geometry={nodes.Object_4.geometry}

@@ -94,17 +94,18 @@ header {
   height: 80%;
   background-color: transparent;
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Jura", sans-serif;
 }
 .scroll-zone h3 {
   color: white;
   padding: 20px 0;
   position: sticky;
+  opacity: 0.2;
   top: 10px;
 }
 .scroll-zone h3 span {
   font-size: 14px;
-  opacity: 0.2;
+  opacity: 1;
 }
 .alert-enter {
   opacity: 0;

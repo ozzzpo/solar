@@ -29,7 +29,7 @@ export function Uranus({ isChoosed, name, onClick }) {
       dispose={null}
       onClick={(event) => onClick(event, name, camera, cameraControlsRef)}
     >
-      <CameraControls ref={cameraControlsRef} dollySpeed={0} />
+      <CameraControls ref={cameraControlsRef} dollySpeed={0} maxZoom={1} />
       <group position={[0, 0.003, 0]} rotation={[Math.PI / 2, 0, Math.PI]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh

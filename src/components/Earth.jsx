@@ -27,7 +27,12 @@ export function Earth({ isChoosed, name, onClick }) {
       dispose={null}
       onClick={(event) => onClick(event, name, camera, cameraControlsRef)}
     >
-      <CameraControls ref={cameraControlsRef} dollySpeed={0} />
+      <CameraControls
+        ref={cameraControlsRef}
+        dollySpeed={0}
+        minZoom={0.01}
+        maxZoom={1}
+      />
       <mesh
         geometry={nodes.Sphere_Material002_0.geometry}
         material={materials["Material.002"]}

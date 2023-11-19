@@ -24,21 +24,21 @@ export function Saturn({ isChoosed, name, onClick }) {
   });
   return (
     <group ref={group} dispose={null}>
-      <CameraControls ref={cameraControlsRef} dollySpeed={0} />
-      <group name="Sketchfab_Scene">
+      <CameraControls ref={cameraControlsRef} dollySpeed={0} maxZoom={1} />
+      <group name='Sketchfab_Scene'>
         <group
-          name="Sketchfab_model"
+          name='Sketchfab_model'
           rotation={[-Math.PI / 2, 0, 0]}
           scale={0.002}
         >
           <group
-            name="56fb5d81d5a845599d5e60534f293915fbx"
+            name='56fb5d81d5a845599d5e60534f293915fbx'
             rotation={[Math.PI / 2, 0, 0]}
           >
-            <group name="Object_2">
-              <group name="RootNode">
+            <group name='Object_2'>
+              <group name='RootNode'>
                 <group
-                  name="Saturn"
+                  name='Saturn'
                   rotation={[-Math.PI / 1.95, 2.5, 0]}
                   scale={114}
                   onClick={(event) =>
@@ -46,29 +46,29 @@ export function Saturn({ isChoosed, name, onClick }) {
                   }
                 >
                   <mesh
-                    name="Saturn_Material_#50_0"
+                    name='Saturn_Material_#50_0'
                     geometry={nodes["Saturn_Material_#50_0"].geometry}
                     material={materials.Material_50}
                   />
                 </group>
                 <group
-                  name="Saturn_Clouds"
+                  name='Saturn_Clouds'
                   rotation={[-Math.PI / 1.95, 2.5, -0.019]}
                   scale={111}
                 >
                   <mesh
-                    name="Saturn_Clouds_Material_#62_0"
+                    name='Saturn_Clouds_Material_#62_0'
                     geometry={nodes["Saturn_Clouds_Material_#62_0"].geometry}
                     material={materials.Material_62}
                   />
                 </group>
                 <group
-                  name="Saturn_Rings"
+                  name='Saturn_Rings'
                   rotation={[-Math.PI / 1.95, 2.7, 0]}
                   scale={114}
                 >
                   <mesh
-                    name="Saturn_Rings_Material_#63_0"
+                    name='Saturn_Rings_Material_#63_0'
                     geometry={nodes["Saturn_Rings_Material_#63_0"].geometry}
                     material={materials.Material_63}
                   />
