@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Space+Grotesk:wght@300;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 800px;
+  background-color: rgba(1, 6, 25, 1);
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  z-index: 1;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+}
+.title {
+  height: 100px;
+  text-align: center;
+  padding: 5px 0px;
+  font-size: 60px;
+  color: black;
+}
+
+.planets {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 40px 0;
+  transform: translateY(-900px);
+  overflow: hidden;
+}
+.canvas-wrapper {
+  display: flex;
+  color: white;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  padding: 40px 0;
+  background-color: transparent;
+  font-family: "Space Grotesk", sans-serif;
+  font-family: "Jura", sans-serif;
+  line-height: 25px;
+  letter-spacing: 3px;
+}
+.details h1 {
+  margin-bottom: 10px;
+}
+.scroll-zone {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 150px;
+  height: 80%;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+.scroll-zone h3 {
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 10px;
+}
+.scroll-zone h3 span {
+  font-size: 14px;
+  opacity: 0.2;
+}
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+@media (max-width: 900px) {
+  .canvas-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 430px) {
+  .details {
+    width: 300px;
+  }
+  .scroll-zone {
+    width: 80px;
+  }
+  .scroll-zone h3 {
+    font-size: 10px;
+  }
+  .scroll-zone h3 span {
+    font-size: 10px;
+  }
+}
